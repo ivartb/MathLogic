@@ -41,7 +41,7 @@ public class ProofGenerator {
     }
 
     Expression genABBA(Expression a, Expression b) throws IOException {
-        proveHelper(new char[]{'a', 'b'}, new Expression[]{a, b}, "abba.txt");
+        proveHelper(new char[]{'a', 'b'}, new Expression[]{a, b}, "a+b'.txt");
         return eqv(b, a);
     }
 
